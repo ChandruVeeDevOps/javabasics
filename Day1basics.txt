@@ -1,0 +1,36 @@
+1️⃣ What actually happens when you run a Java program? (DEEP)
+
+When you write:
+
+public class Hello {
+    public static void main(String[] args) {
+        System.out.println("Hello");
+    }
+}
+
+The process:
+Step 1 – Compilation (Source → Bytecode)
+Hello.java  → javac compiler → Hello.class
+
+
+.java = human readable
+
+.class = bytecode (JVM readable)
+
+Step 2 – JVM loads bytecode
+
+JVM has 3 main parts:
+
+Class Loader → loads .class
+
+JIT Compiler → compiles frequently used code into native code
+
+Garbage Collector → removes unused objects
+
+Step 3 – Execution
+
+JVM reads bytecode line by line
+
+Executes it inside the OS
+
+✔ This is what makes Java platform independent.
